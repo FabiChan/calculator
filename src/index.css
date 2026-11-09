@@ -1,0 +1,75 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    background-color: #1c162b;
+    color: #fce8f3;
+    font-family:
+      ui-sans-serif,
+      system-ui,
+      -apple-system,
+      BlinkMacSystemFont,
+      "Segoe UI",
+      Roboto,
+      "Helvetica Neue",
+      Arial,
+      sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+  button:not(:disabled) {
+    cursor: pointer;
+  }
+
+  button:disabled {
+    cursor: not-allowed;
+  }
+}
+
+/* Custom 90s Anime Keypad & Scrollbar Styling */
+.btn-anime {
+  padding: 0.85rem 0.5rem;
+  font-weight: 700;
+  font-size: 1rem;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 1rem;
+  transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.btn-anime:active {
+  transform: translateY(2px) scale(0.97);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.btn-digit {
+  background-color: rgba(40, 33, 54, 0.6);
+  color: #fce8f3;
+  border-color: rgba(189, 147, 249, 0.2);
+}
+
+.btn-digit:hover {
+  background-color: rgba(255, 121, 198, 0.2);
+  border-color: rgba(255, 121, 198, 0.6);
+  color: #ffffff;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 5px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: rgba(24, 19, 36, 0.5);
+  border-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(255, 121, 198, 0.4);
+  border-radius: 10px;
+}
